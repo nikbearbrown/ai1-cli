@@ -31,9 +31,9 @@ You're converting a book that teaches *writing* into a book that teaches *copywr
 1. **Structure:** How do composition skills map to copywriting skills? Which of this book's 24 chapters have a copywriting counterpart (a profile becomes a case study; a proposal becomes a pitch; rhetorical analysis becomes an ad teardown), which have none, and what does a copywriting book need that a composition book never taught — headlines, offers, calls to action, landing pages, email, brand voice?
 2. **Principles:** The classic principles of direct advertising — state the differentiator before writing a word, translate features into benefits, earn attention before asking for it — were formulated in a world of paid pages and scarce attention. **Do they still hold in an AI world**, where copy is generated in volume, feeds and search mediate attention, and your reader may be a recommendation algorithm before it's a person? Treat these as hypotheses to test, not doctrine to inherit — and cite them as principles, not as any famous name's endorsement.
 
-Draft the prompt with your agent, then read it the way you read the inventory: would a stranger know exactly what questions to answer and what evidence to bring back? Sharpen it until yes.
+Draft the prompt with your agent — then **read it**. Both tests must pass: would a stranger know what to answer and what evidence to bring back, *and do you understand every line of it yourself?* Agents love elaborate prompts; if you can't say what yours asks, you can't judge what comes back. Rewriting a prompt two or three times is normal and fine. Running a prompt you haven't read and thought about is not — that's the human gate, and it applies to prompts just as much as to plans.
 
-**Artifact:** the research prompt.
+**Artifact:** the research prompt — the version *you* understand.
 
 ### Step 3 — Run the research
 
@@ -122,12 +122,20 @@ Twenty-four chapters, ≈117,000 words, median ≈5,000 per chapter.
 
 *(Notes like that one are part of the method, not decoration: the margin is part of the record. A first pass you intend to cut is honest work; a first pass you pretend is final is the fluency trap with your own name on it.)*
 
-### Step 2 — the research prompt
+### Step 2 — the research prompt, rejected once
 
-First draft of Question 2 read: *"Is classic Ogilvy-style copywriting still relevant in the age of AI?"* — which fails the chapter's own test twice. A stranger can't tell what evidence to bring back ("relevant" how, to whom?), and it leans on a name where it should state principles. The sharpening pass turned it into five testable hypotheses — differentiator-first, features→benefits, attention-before-ask, specificity-over-superlatives, long-copy-as-targeting — each to be graded **HOLDS / HOLDS-MODIFIED / SUPERSEDED** against three specifically AI-era conditions: copy generated at volume, feeds and search mediating attention, and the first "reader" possibly being a ranking model or AI shopping assistant.
+The agent's first draft was impressive. It classified every chapter into CONVERTS / CUTS / UNCLEAR taxonomies, decomposed the principles question into five numbered hypotheses with a HOLDS / HOLDS-MODIFIED / SUPERSEDED grading rubric, and specified a three-tier source-grading scheme with retrieval dates. Thorough, structured, machine-shaped.
 
-Question 1 got the same treatment: not "how should the book be restructured?" but a forced classification — every one of the 24 inventory rows must come back **CONVERTS** (with named counterpart and a source on the target genre's standards), **CUTS** (one-sentence reason), or **UNCLEAR** (for and against stated) — plus a confirm-or-reject pass over the candidate missing chapters (headlines, offers, landing pages, email, brand voice, the brief, audience research, proof, persuasion ethics).
+The author read it and said: **"I don't understand that prompt at all."**
 
-The prompt also carries the evidence standards the system demands everywhere: every claim clickable, sources graded T1 (peer-reviewed/platform data) to T3 ("consensus, evidence thin" — labeled as such), conflicts reported rather than averaged, and no number without a source. The output contract names the exact file Step 3 must produce, so the Blueprint can cite findings line by line.
+That sentence is the human gate doing its job. A prompt the human can't read is a prompt the human can't judge — and everything that comes back from it inherits the problem: how would you check findings against questions you never understood? So the elaborate version was rejected and kept (`pantry/ai1-ch1-research-prompt-rejected.md` — go read it as a specimen), and the replacement asks the same things in plain language:
 
-**Artifact:** the full prompt, verbatim, at `pantry/ai1-ch1-research-prompt.md` in the clone. Compare yours to ours by the test, not the wording: would a stranger know exactly what to answer and what evidence to bring back?
+> For **every chapter**: (1) Is this still relevant in the age of AI — people draft with AI now; does this skill still matter, and to whom? (2) If it's relevant, how would it change for a copywriting book — what's the counterpart, what's different?
+>
+> For **the book as a whole**: (3) Is classic Ogilvy-style copywriting still relevant in the age of AI — which principles hold, which need updating, and why? (4) Is there anything missing — what does a copywriting book need that this writing book never taught?
+>
+> Ground every answer in sources I can click. When the evidence is thin or just practitioner opinion, say so plainly.
+
+Four questions. A stranger could answer them; more importantly, the person who has to sign GATE 0 understands exactly what was asked. The lesson of this step, in one line: **rewriting prompts is normal and fine — running a prompt you haven't read and thought about is not.** The rewrite cost two minutes. Running the unread version would have cost a research file shaped like a rubric nobody wanted.
+
+**Artifacts:** `pantry/ai1-ch1-research-prompt.md` (the version that runs) and `pantry/ai1-ch1-research-prompt-rejected.md` (the gate's receipt).
