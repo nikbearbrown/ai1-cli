@@ -180,6 +180,32 @@ Bear read the proposal and approved it — three words in the chat: *"That looks
 - **Nothing was cut silently.** All 24 source chapters have a disposition and a reason; even the one global cut (the school apparatus) is logged with its why.
 - **The unverified material is fenced.** The one chapter resting on single-run sources carries its own rule — verify before drafting, or reframe around what verifies — so the signature doesn't accidentally endorse claims nobody checked.
 
+**And this is what was signed** — the copywriting book's table of contents, as approved at GATE 0:
+
+| # | Core chapter | Built from | Support |
+|---|---|---|---|
+| 1 | The Brief: Judgment Over Fluency — directing, evaluating, and rejecting AI copy | 00 | ✓✓ |
+| 2 | Voice: Yours, the Brand's, the Customer's — guardrails, tone, dialect with intent | 01+03 | ✓✓ |
+| 3 | Reading the Feed: Teardowns — swipe files, funnel reverse-engineering, AI-search surfaces | 02+11 | ✓✓ |
+| 4 | Voice of the Customer: Interviews and Message Mining — the human moat | 07+19 | ✓✓ |
+| 5 | Offers and Positioning — the product as hero; what copy can't rescue | new | ✓✓ |
+| 6 | The Sales Page: Problem to Pitch — section-by-section argument | 08 | ✓✓ |
+| 7 | Objections and Risk Reversal — skepticism as the market condition | 12 | ✓✓ |
+| 8 | Buyer Awareness and the Frameworks — Schwartz's stages; PAS, BAB, AIDA | new | ✓ ⚠ *verify first* |
+| 9 | Reasoning That Survives Scrutiny — analogy, cause, classification; QA on fluent nonsense | 13 | ✓✓ |
+| 10 | Research Ops and the Claims File — primary research, provenance, the compliance database | 10+15+16 | ✓✓ |
+| 11 | Proof: Case Studies, Reviews, and Evidence Assets — FTC-aware testimonials, white papers | 17+09+05+14 | ✓✓ |
+| 12 | Multimodal: Image, Page, and Script — text-image fit, layout, VSLs, short-form video | 20+21+22 | ✓✓ |
+| 13 | Measurement and the Postmortem — CR/CTR/ROAS, testing, the campaign debrief | new + 23 | ✓✓ |
+| 14 | AI Operations and Governance — model choice, sign-off, disclosure, provenance | new + 18 | ✓ |
+
+| Module | For | Carries |
+|---|---|---|
+| A — When You Are the Product | founders + creators | origin story, transformation narrative (scene craft from 04/06), building in public |
+| B — When Copy Is Your Business | freelancers | proposals and pricing as self-applied copy, the portfolio case study, client acquisition as your own funnel |
+
+Fourteen core chapters, two modules, all 24 source chapters accounted for — and every row checkable against the findings file it came from.
+
 The four open questions were **deferred with a note** rather than rushed — the gate rule allows that, provided each is resolved before its chapter drafts. And one practical wrinkle became a forward link: this clone predates AI+1 governance, so the approval is logged in the proposal file itself, to be transferred to a proper `STATUS.md` when the book is brought under governance — which is Chapter 2's job, and now you know one reason it matters.
 
 That's Chapter 1 complete, and notice what you never did: edit a chapter. You inventoried a real book, commissioned research, triangulated it, watched a plan get built from the evidence, and signed your name to it. Everything that happens in the next eleven chapters happens *because* this signature exists — and can be checked against it.
