@@ -74,3 +74,46 @@ From a real run of this chapter: the inventory row for writing-guide's Chapter 7
 ## Bridge
 
 You now own a signed plan for a book that doesn't build under your name yet. Chapter 2 fixes that in about ten minutes — you'll change one sentence, run one command, and watch a real EPUB come out with your change in it. Then you'll put your name on the cover.
+
+---
+
+## Bear's Copywriting Book
+
+*Every chapter of this book ends with this section: our actual run of the chapter's exercises, on the real clone, warts included. It's not the answer key — your run will differ, and should. It's proof the exercises work, and a worked example of what "done" looks like.*
+
+### Step 1 — the inventory run
+
+The ask, verbatim: *"Read `chapters/` in the writing-guide clone and produce an inventory table: chapter number, title, what it actually teaches — one line, not the title restated — and approximate length."* The agent read all 24 chapters (their TL;DRs and section structures) and came back with the table below. Word counts are exact (`wc -w`), rounded to the nearest hundred.
+
+| # | Chapter | What it actually teaches | ~Words |
+|---|---|---|---|
+| 00 | Introduction | Route map: the gap between knowing the terms and using them with judgment | 1,700 |
+| 01 | The Things We Carry | Every writer arrives with a loaded pack — experience, culture, language, now AI — and writing starts by inventorying it | 4,600 |
+| 02 | The Digital World | Rhetorical reading of the media you already scroll: seven visible elements, with worked examples | 5,800 |
+| 03 | Language, Identity, and Culture | What "Standard English" is and isn't; borrowing the academy's voice without surrendering your own | 4,100 |
+| 04 | The Literacy Narrative | Scene-and-summary machinery for telling how you became a reader/writer | 5,600 |
+| 05 | Bridging Identity and Academia | Which personal material transfers into academic genres, which doesn't, and the two ways the move fails | 5,100 |
+| 06 | Memoir / Personal Narrative | Building a scene around the moment you changed — while handling memory's unreliability honestly | 4,800 |
+| 07 | The Profile | Interview-driven portrait held together by one controlling sentence; three kinds of research; the puff-piece trap | 5,200 |
+| 08 | The Proposal | Defining a problem narrowly enough to be solvable, then arguing a feasible fix section by section | 5,600 |
+| 09 | Evaluation / Review | Judgment with earned criteria — what separates a review from a reaction | 4,900 |
+| 10 | The Analytical Report | Writing from facts when fact-vs-opinion doesn't solve cleanly: three biases you compensate for | 5,100 |
+| 11 | Rhetorical Analysis | Taking an argument apart at the seams: the appeals, the situation, named persuasion moves | 5,900 |
+| 12 | The Position Argument | Defending a claim a reader might reject: debatable issue, claim, counterargument, two structures | 4,700 |
+| 13 | Reasoning Strategies | A toolkit of reasoning patterns — analogy, cause-and-effect, classification — and when each persuades or misleads | 5,800 |
+| 14 | Argumentative Research | Argument that enters a scholarly conversation: a sharper thesis and a source-quality hierarchy | 4,900 |
+| 15 | The Research Process | Actually finding and recording evidence: library moves, field methods, source evaluation beyond the checklist | 5,100 |
+| 16 | Annotated Bibliography | Summarize-and-evaluate discipline per source — and why the evaluation half is always the weakest | 4,600 |
+| 17 | Case Study Profile | **Single-subject research: methods and ethics for studying one person, and what one case can claim about the many** | 5,100 |
+| 18 | Navigating Rhetoric in Real Life | Transferring the toolkit beyond the classroom — including when LLMs belong in public-facing writing | 4,000 |
+| 19 | Print / Textual Analysis | Close reading as evidence-based interpretation, written for an interpretive community | 4,900 |
+| 20 | Image Analysis | Reading images as arguments: visual elements, plus the context the image can't supply | 4,900 |
+| 21 | Multimodal and Online Writing | Combining text, image, and sound: what each mode rewards and how the rhetorical questions shift | 4,400 |
+| 22 | Scripting for the Public Forum | Writing for the ear: repetition machinery, talk-scale structure, what delivery controls that the script can't | 5,000 |
+| 23 | Portfolio Reflection | Evidence-based reflection on your own growth — three required moves, harder than it looks | 5,100 |
+
+Twenty-four chapters, ≈117,000 words, median ≈5,000 per chapter.
+
+**The row we fixed.** The agent's first one-liner for chapter 17 was *"a longer, more in-depth version of the Chapter 7 profile"* — a title restatement wearing a disguise. Reading the chapter's actual sections (research methods, ethics, what one case can claim about the general) shows it's a qualitative-research chapter, not a bigger profile. That's the bolded row above, corrected. One row out of twenty-four — which is roughly the hit rate you should expect, and exactly why the exercise says *read the table*: the inventory is a claim, and we just checked it.
+
+**Artifact:** saved in the clone at `pantry/ai1-ch1-inventory.md` — where Step 2's research prompt and Step 5's Blueprint will cite it. (You can already see conversion candidates flickering in the table — profile→case study, proposal→pitch, review→product review — but those are Step 5 decisions, not Step 1 ones. The inventory's job is to be true, not to be the plan.)
