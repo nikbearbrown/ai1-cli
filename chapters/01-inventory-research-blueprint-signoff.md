@@ -117,3 +117,17 @@ Twenty-four chapters, ≈117,000 words, median ≈5,000 per chapter.
 **The row we fixed.** The agent's first one-liner for chapter 17 was *"a longer, more in-depth version of the Chapter 7 profile"* — a title restatement wearing a disguise. Reading the chapter's actual sections (research methods, ethics, what one case can claim about the general) shows it's a qualitative-research chapter, not a bigger profile. That's the bolded row above, corrected. One row out of twenty-four — which is roughly the hit rate you should expect, and exactly why the exercise says *read the table*: the inventory is a claim, and we just checked it.
 
 **Artifact:** saved in the clone at `pantry/ai1-ch1-inventory.md` — where Step 2's research prompt and Step 5's Blueprint will cite it. (You can already see conversion candidates flickering in the table — profile→case study, proposal→pitch, review→product review — but those are Step 5 decisions, not Step 1 ones. The inventory's job is to be true, not to be the plan.)
+
+> **Bear's note (2026-06-12):** It's long. I like it — this is a fine first pass, and I'll almost certainly cut it down later. I don't really know what I want to cut until it's written, so for a rough draft, this is exactly fine.
+
+*(Notes like that one are part of the method, not decoration: the margin is part of the record. A first pass you intend to cut is honest work; a first pass you pretend is final is the fluency trap with your own name on it.)*
+
+### Step 2 — the research prompt
+
+First draft of Question 2 read: *"Is classic Ogilvy-style copywriting still relevant in the age of AI?"* — which fails the chapter's own test twice. A stranger can't tell what evidence to bring back ("relevant" how, to whom?), and it leans on a name where it should state principles. The sharpening pass turned it into five testable hypotheses — differentiator-first, features→benefits, attention-before-ask, specificity-over-superlatives, long-copy-as-targeting — each to be graded **HOLDS / HOLDS-MODIFIED / SUPERSEDED** against three specifically AI-era conditions: copy generated at volume, feeds and search mediating attention, and the first "reader" possibly being a ranking model or AI shopping assistant.
+
+Question 1 got the same treatment: not "how should the book be restructured?" but a forced classification — every one of the 24 inventory rows must come back **CONVERTS** (with named counterpart and a source on the target genre's standards), **CUTS** (one-sentence reason), or **UNCLEAR** (for and against stated) — plus a confirm-or-reject pass over the candidate missing chapters (headlines, offers, landing pages, email, brand voice, the brief, audience research, proof, persuasion ethics).
+
+The prompt also carries the evidence standards the system demands everywhere: every claim clickable, sources graded T1 (peer-reviewed/platform data) to T3 ("consensus, evidence thin" — labeled as such), conflicts reported rather than averaged, and no number without a source. The output contract names the exact file Step 3 must produce, so the Blueprint can cite findings line by line.
+
+**Artifact:** the full prompt, verbatim, at `pantry/ai1-ch1-research-prompt.md` in the clone. Compare yours to ours by the test, not the wording: would a stranger know exactly what to answer and what evidence to bring back?
