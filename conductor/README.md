@@ -20,6 +20,14 @@ Each phase ends with a gate you record in `../STATUS.md`.
 
 = **the spine**: a complete, fact-checked, illustrated book.
 
+## Advisory tools (any time a draft exists)
+
+`editorial-review/` — the Reader's Report: a developmental + line editor's
+read of the whole manuscript, returned as `editorial-report.md`. Advisory
+only — it never rewrites the book. Natural moments: before GATE 3 (it feeds
+the Human Rewrite) and before calling the book done. Distinct from Fact
+Check (claim accuracy) and voices (register rewrite).
+
 ## After the spine
 
 `editions/` — optional add-ons the author chooses (quizzes, flashcards,

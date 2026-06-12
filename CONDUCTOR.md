@@ -235,6 +235,18 @@ originals untouched. The **Wonder** voice is built — see `voices/wonder/VOICE.
 
 ---
 
+## Advisory tool: Editorial Review
+
+Any time a draft exists — and especially before GATE 3 and before calling the
+book done — run `conductor/editorial-review/editorial-review.md`: a
+developmental + line editor's read of the full manuscript against its own
+stated intent, returned as a constructive reader's report
+(`editorial-report.md`, sidecar-stubbed, advisory only). It is distinct from
+Fact Check (claim accuracy) and from voices (register rewrite); it never
+rewrites the book. The author acts on it in the Human-Rewrite pass.
+
+---
+
 ## Working agreement (for the agent)
 
 1. **One phase at a time, in order.** Check `STATUS.md` before acting.

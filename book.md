@@ -18,7 +18,7 @@
 
 ## One-Sentence Pitch
 
-You learn to make books by talking to a CLI agent — starting with a finished, fact-checked textbook you download and change, and ending with one you built from scratch and exported to Kindle and Canvas and Medhavy (.mdx files rather than md).
+You learn to make books by talking to a CLI agent — starting with a finished, fact-checked writing guide you download and change, and ending with the copywriting book you remade from it: re-architected with Blueprint and exported to Kindle and Canvas and Medhavy (.mdx files rather than md).
 
 ## The Argument
 
@@ -36,14 +36,16 @@ A non-technical author, teacher, or student who can use email and chat with an A
 
 ## High-Level Outline
 
-**Part I — Make a Book Yours (download → change → ship)**
-Start from a finished, fact-checked book (e.g., the cancer-biology textbook). Change one sentence and rebuild. Then retitle it, re-voice it, generate quizzes and flashcards, export to Kindle and Canvas, and learn the fact dictionary and sidecar sign-offs along the way. Whole tasks from minute one; the system's rules are encountered, not lectured.
+**The running project:** one thread carries the whole book — download the *Writing Guide* (24 chapters of composition and rhetoric; everyone writes, so no domain expertise is required) and remake it into a **copywriting book**.
 
-**Part II — Change the Substance**
-Move from editing to authoring inside the downloaded book: swap in a chapter on your own subject, practice the human rewrite (the gate no agent may sign), and make and audit figures. The reader crosses from "operating the factory" to "being the author the factory serves."
+**Part I — Blueprint First, Then Operate**
+Everything starts with the Blueprint, and the Blueprint starts with evidence. Chapter 1 is the full loop in miniature: inventory the downloaded book, generate a research prompt (restructuring writing→copywriting; whether the classic direct-advertising principles still hold in an AI world — principles referenced, no name-brand endorsement), run the research, save it to the pantry, present the new Blueprint — including the assessment plan (quizzes, exercises, flashcards, Canvas modules) — and, on approval, log the sign-off at GATE 0. Then operate: change one sentence and rebuild, retitle and re-cover, bring it under AI+1 governance, re-voice a chapter, generate the assessments the plan promised, export to Canvas, learn the fact dictionary. Whole tasks from minute one; the rules are encountered, not lectured.
 
-**Part III — Build From Scratch**
-Blueprint a new book (Phase 0), research before drafting, draft and rewrite behind gates, fact-check, illustrate, and ship to every target. Part III is the seven-phase spine walked end to end — the reader's own honest run.
+**Part II — The Conversion**
+Remake the substance: decide which of the 24 chapters die (and log every No), convert what survives (profile → case study, proposal → pitch, rhetorical analysis → ad teardown) through the human rewrite — the gate no agent may sign — and add the chapters copywriting needs that composition never had.
+
+**Part III — Verify Against the Plan, Then Ship**
+The manuscript meets the Blueprint: Editorial Review and the adoption-failure critique compare what got built to what was signed in Chapter 1; divergence is resolved explicitly, never by drift. Fact-check inherited claims and new ones, then ship to every target: EPUB/Kindle, Canvas, Medhavy, and the assessments regenerated against the final text. A two-page coda covers from-scratch: same Blueprint, minus the downloaded book.
 
 ## Out of Scope
 
@@ -51,7 +53,8 @@ Blueprint a new book (Phase 0), research before drafting, draft and rewrite behi
 
 ## Open Questions
 
-- [ ] Which downloaded book is the canonical Chapter 1 example — cancer-biology-all, or a smaller/faster-building one?
+- [x] Which downloaded book is the Chapter 1 example? → **writing-guide** (cancer biology too technical; everyone writes). Decided 2026-06-12.
 - [ ] Kindle delivery in exercises: sideload to a device, Kindle Previewer, or both? (Reader may have neither.)
 - [ ] Canvas access for readers without an institution — rely on the free Canvas teacher account?
 - [ ] How much of the existing chapters 00–20 prose survives as "overview" sections vs. moves to appendices?
+- [ ] Does the converted copywriting book live in the reader's fork of writing-guide, or become its own repo at conversion time (Ch 7)?

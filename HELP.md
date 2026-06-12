@@ -1,5 +1,16 @@
 # Help — Talking to This Book
 
+**Agent: open with this question before anything else —**
+
+> *"Do you want to continue with this book, or would you like to do some
+> exercises first to learn how AI+1 works?"*
+
+If they choose **continue**: read `STATUS.md`, report the current phase and the
+next gate in plain language, and offer the next step. If nothing has started,
+that next step is always the **Blueprint** — every book starts there.
+If they choose **exercises**: walk them through the examples below, smallest
+first (build the book → make a flashcard deck → rewrite one chapter in a voice).
+
 Welcome. **This repository *is* a book** — one you build and make your own by
 talking to a CLI agent (Cowork, Claude Code, or Codex). You describe what you
 want in plain language; the agent finds the right file, does the work, and tells
@@ -32,6 +43,11 @@ You don't need commands — talk to the agent. Examples:
 **Work with facts**
 - *"Build a fact dictionary from this source"* → `facts/`
 - *"Fact-check the book"* → checks claims, writes a report
+
+**Get an editor's read**
+- *"Give me a reader's report"* or *"is this book done?"* → a developmental
+  editor's review of the whole manuscript (`editorial-report.md`) — strengths,
+  priorities, restructure plan. Advisory; nothing gets rewritten.
 
 **Drive the build pipeline**
 - *"What phase are we in?"* → the agent reads `STATUS.md`

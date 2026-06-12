@@ -732,6 +732,11 @@ After establishing type, produce a DEPLOYMENT SPECIFICATION:
 - What the book explicitly is NOT designed for
 - How the TOC structure will signal the book type to a faculty member
   reviewing it for adoption
+- ASSESSMENT REQUIREMENTS: which assessments the deployment context
+  needs and the author commits to produce — chapter quizzes, practice
+  exercises, worked solutions, flashcards/Anki, exam bank, Canvas/LMS
+  modules. Name each as desired / needed / out of scope. A course
+  textbook with no assessment plan is not yet a course textbook.
 ```
 
 ---
@@ -1736,6 +1741,9 @@ architecture.md sections:
 - Three-Act Learning Arc (from /l3)
 - Prerequisite Dependency Map (from /l4)
 - Front-Loading Decisions (from /l4)
+- Assessment Plan (from /i2 deployment spec: which assessments are
+  desired/needed — quizzes, exercises, flashcards, exam bank, LMS
+  modules — and which chapters each applies to)
 
 chapters-spec.md sections:
 - Chapter Anatomy Template (from /c2)

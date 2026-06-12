@@ -7,6 +7,14 @@ Human-Rewrite phase). It is distinct from **Fact Check** (accuracy of claims) an
 from **voices** (rewriting in a register). Run it any time a draft exists, and
 especially before calling a book "done."
 
+> **Where this sits in AI+1:** not a phase and not a gate — an advisory tool,
+> runnable whenever `chapters/` has a draft. Its natural moments: before GATE 3
+> (the report feeds the Human Rewrite) and before declaring the spine done.
+> The report is an artifact: write `editorial-report.md` at the book root, stub
+> its sidecar (`python scripts/verify.py stub editorial-report.md --phase review`),
+> and stop — the author reads it; no agent acts on it without the author's
+> direction.
+
 ## Stance (this is the whole game)
 
 - **Editor, not critic.** Every problem you name comes with a concrete, minimal

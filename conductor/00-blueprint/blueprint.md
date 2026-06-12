@@ -19,7 +19,7 @@ First. Before any research or drafting.
 
 ## Outputs
 - `vision.md` — positioning, learner profile, central argument, field comparison.
-- `architecture.md` — learning outcomes, sequencing model, three-act arc.
+- `architecture.md` — learning outcomes, sequencing model, three-act arc, **assessment plan** (which assessments are desired/needed: quizzes, exercises, flashcards/Anki, exam bank, Canvas modules — decided here, generated later as editions).
 - `chapters-spec.md` — per-chapter spec (capability, outcomes, blocks, exercises).
 - `risks.md` — comparable texts, market, scope, adoption risks.
 - `outline.md` — the chapter-level TOC, kept in sync with the above.
@@ -38,7 +38,10 @@ file, STOP and ask me to confirm before continuing:
 
 2. ARCHITECTURE (architecture.md): For each chapter, write measurable learning
    outcomes at a Bloom's level. Choose and justify a sequencing model. Map the
-   three-act arc (establish / build / apply).
+   three-act arc (establish / build / apply). State the ASSESSMENT PLAN: which
+   assessments this book's deployment needs — chapter quizzes, practice
+   exercises, worked solutions, flashcards/Anki, exam bank, Canvas modules —
+   each marked desired / needed / out of scope, and which chapters they apply to.
 
 3. CHAPTER SPEC (chapters-spec.md): For each chapter — the capability it builds
    (not topics covered), its outcomes, 4–6 content blocks, one worked example,
@@ -55,6 +58,7 @@ my input as [NEEDS HUMAN INPUT] — do not invent answers about my intent.
 Do not proceed to Phase 1 until:
 - [ ] Every `[NEEDS HUMAN INPUT]` is resolved.
 - [ ] `outline.md` reflects the central argument (chapters are in an order that does real work).
+- [ ] The assessment plan is stated (which assessments are desired/needed, or explicitly none).
 - [ ] A human has read all four files and agrees this is the right book.
 
 Record the sign-off in `STATUS.md` (GATE 0), then move to `conductor/10-research/`.
