@@ -1,0 +1,10 @@
+output/
+*.epub
+*.pdf
+*.docx
+.DS_Store
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
