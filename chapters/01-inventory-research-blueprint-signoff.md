@@ -39,6 +39,8 @@ Draft the prompt with your agent — then **read it**. Both tests must pass: wou
 
 Have your agent run it — web sources, with citations, dead links rejected. Demand the same discipline the system demands everywhere: every claim in the findings traces to a source you could click. If the agent asserts that "benefit-led copy outperforms feature-led copy," there had better be a study, a documented test, or an honest "practitioner consensus, evidence thin" label attached.
 
+Better still, don't run it once. The same plain-language prompt will run in any research system — your CLI agent, Gemini Deep Research, OpenAI's deep research — and *you* are the only one with access to all of them. Run two or three, hand the results back to your agent, and have it cross-verify: claims that independent systems agree on (with independent sources) get believed; claims only one system makes get checked; flat disagreements are the most valuable output of all, because they mark exactly where the evidence is genuinely unsettled. Triangulation is cheap, and it's the same habit as the fact dictionary: never let one fluent answer stand in for verification.
+
 ### Step 4 — Save it to the pantry
 
 Research that lives in a chat scroll dies with the chat. Have the agent save the findings to `pantry/` — the repo's room for raw material — as a named file (e.g., `pantry/copywriting-conversion-research.md`). From now on, that file is citable: the Blueprint will reference it, Chapter 9 will draft from it, Chapter 11 will fact-check against it.
@@ -139,3 +141,45 @@ That sentence is the human gate doing its job. A prompt the human can't read is 
 Four questions. A stranger could answer them; more importantly, the person who has to sign GATE 0 understands exactly what was asked. The lesson of this step, in one line: **rewriting prompts is normal and fine — running a prompt you haven't read and thought about is not.** The rewrite cost two minutes. Running the unread version would have cost a research file shaped like a rubric nobody wanted.
 
 **Artifacts:** `pantry/ai1-ch1-research-prompt.md` (the version that runs) and `pantry/ai1-ch1-research-prompt-rejected.md` (the gate's receipt).
+
+### Step 3 — the research run (triangulated)
+
+Here's how we're running it. Bear asked the CLI agent to run the research — and is *also* running the identical prompt through **Gemini Deep Research** and **OpenAI deep research**, two systems the agent has no access to. All three result sets land in the pantry, and the agent's job shifts from sole researcher to **cross-verifier**: build one findings file where every claim is marked by how many independent runs support it, every source is deduplicated and checked, and every disagreement between the three systems is surfaced rather than smoothed over.
+
+Notice the labor split, because it's the book's whole argument in miniature: the human is the only party who can reach all three systems, so the human orchestrates; the agent is best at the tedious-and-exacting part, so the agent reconciles; and nothing gets believed because one model said it fluently. Where the three runs agree from independent sources, the Blueprint gets a solid plank. Where they disagree — and they will — that's not noise, that's the research telling us where the AI-era copywriting question is genuinely open, which is exactly what Question 3 wanted to know.
+
+**What came back.** The two deep-research systems returned strikingly different *shapes*. Run A produced a confident translation matrix — all 24 chapters mapped to copywriting counterparts, Ogilvy principles sorted into holds-vs-modernize, Schwartz's awareness stages, even conversion formulas — and rated essentially *every* chapter "highly relevant." Run B discriminated: it labeled the evidence quality of every judgment ("strong," "moderate," "thin and mostly adjacent"), cited institutions (NIST, FTC, Google's spam policies, platform surveys), and demoted three chapters — the literacy narrative, the memoir, the portfolio reflection — to "selective."
+
+The reconciliation marked every claim: **✓✓** where both runs agreed from their own reasoning (most of the conversion map — profile→case study, proposal→sales page, rhetorical analysis→funnel teardown — and the whole Ogilvy verdict: *principles survive as disciplines; the environment they assumed is gone*), **⚡** where they disagreed, and **⚠** on specifics neither we nor the second system could verify (a named book's "lost chapter," a platform integration, every percentage whose link got stripped in transit — flagged: *do not enter the manuscript uncited*).
+
+Three things the triangulation bought that one run wouldn't have:
+
+1. **A grading curve with no failures is itself a finding.** Run A flattered the premise — twenty-four for twenty-four "highly relevant" should make you suspicious, and only having a second run beside it makes the flattery visible.
+2. **The disagreements are the decision.** The contested chapters (04, 06, 23 — the autobiographical school genres) aren't research failures; they're the research telling us the answer depends on a vision question the Blueprint must now ask: *is our reader a founder or creator whose person is part of the product?* If yes they convert; if no they cut. Either way it's decided explicitly, not averaged.
+3. **The agent's honest leg.** The CLI agent ran no independent web pass (sandboxed) — its contribution was reconciliation, checking both runs against the actual manuscript inventory, and flagging the unverifiables. Knowing what each leg can and can't do is part of the method.
+
+**Artifacts:** `pantry/ai1-ch1-research-findings.md` — the reconciled, cross-marked file the Blueprint will cite, ending with six implications for the table of contents (including the math that forces consolidation: ~17 convertible chapters + ~7 new ones > the 12–14 target). The raw exports go in beside it — with their live citation links, which chat transfer strips.
+
+### Step 5 — the Blueprint, built from the evidence
+
+With the findings in hand, Blueprint ran against both pantry files plus one structural decision the research disagreements forced: **name the readers.** Four were named — the employed copywriter (the core's *stated default*, so the book's bias is a decision rather than an accident), the founder, the creator, and the freelancer — with founder and creator merging into one module (both monetize a person; they differ by channel, not craft).
+
+The proposal that came back: a **14-chapter core** in which every chapter traces to its research support (the strongest-evidence material — voice-of-customer interviewing, the human moat both runs named — sits at the heart), two supplemental **modules** (*When You Are the Product* for founders/creators, carrying the scene-and-summary craft salvaged from the demoted memoir chapters; *When Copy Is Your Business* for freelancers), and a full disposition table for all 24 source chapters: 21 convert or merge, 2 demote to Module A, 1 splits — **none wholly cut**, though the school apparatus (assignment framing, rubric-shaped evaluation) dies globally, with the reason logged. The consolidation audit fired exactly as predicted, and every merger pairs chapters the research mapped to the same counterpart.
+
+Two discipline notes worth copying. The demotions are justified by **audience-conditional relevance** — the thing the triangulated disagreement actually established — not by "thin evidence," which would punish uncertainty as if it were a verdict. And the one chapter built on single-run, unverified-as-delivered sources (buyer-awareness frameworks) carries a hard rule in the proposal itself: *verify before drafting, or the chapter reframes around what verifies.*
+
+**Artifact:** `pantry/ai1-ch1-blueprint-proposal.md` — vision, the four readers, the assessment plan (every chapter produces a portfolio piece), the 14+2 TOC with support marks, the disposition of all 24 chapters, top risks, and four open questions for the human. Which is the cue for Step 6: read it, and sign or refuse.
+
+### Step 6 — the sign-off, and why
+
+Bear read the proposal and approved it — three words in the chat: *"That looks great."* The agent's job at that moment is not to celebrate; it's to **make the approval a record**. The proposal file's status block now reads GATE 0 SIGNED, with the signer, the date, and — this is the part that matters — *the why*, stated so that anyone reading the plan later knows what the signature actually warranted:
+
+- **Every TOC line traces to marked evidence.** Approving the plan means approving its trail, not its vibes — each of the 14 core chapters carries its ✓✓/✓/⚠ support mark back to the findings file.
+- **The readers are named.** The core's bias toward the employed copywriter is a decision on the record, not an accident waiting for a reviewer to find.
+- **The demotions have the right reason.** Modules A and B exist because relevance is audience-conditional — the thing the research disagreement actually established — not because evidence was thin, which would have punished uncertainty as if it were a verdict.
+- **Nothing was cut silently.** All 24 source chapters have a disposition and a reason; even the one global cut (the school apparatus) is logged with its why.
+- **The unverified material is fenced.** The one chapter resting on single-run sources carries its own rule — verify before drafting, or reframe around what verifies — so the signature doesn't accidentally endorse claims nobody checked.
+
+The four open questions were **deferred with a note** rather than rushed — the gate rule allows that, provided each is resolved before its chapter drafts. And one practical wrinkle became a forward link: this clone predates AI+1 governance, so the approval is logged in the proposal file itself, to be transferred to a proper `STATUS.md` when the book is brought under governance — which is Chapter 2's job, and now you know one reason it matters.
+
+That's Chapter 1 complete, and notice what you never did: edit a chapter. You inventoried a real book, commissioned research, triangulated it, watched a plan get built from the evidence, and signed your name to it. Everything that happens in the next eleven chapters happens *because* this signature exists — and can be checked against it.
