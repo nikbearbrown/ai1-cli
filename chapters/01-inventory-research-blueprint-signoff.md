@@ -1,22 +1,26 @@
 # Chapter 1 — Inventory, Research, Blueprint, Sign-Off
 
-Your clone just finished. Twenty-four chapters of someone else's book scroll past in your terminal — literacy narratives, rhetorical analysis, annotated bibliographies. A complete, fact-checked composition textbook, and none of it is yours yet.
+Start by telling your agent to clone the book we'll be working on for the rest of this book:
 
-The amateur move is to start editing. The system's move — the one this whole book is built on — is to answer a question first: **what should this become?** In AI+1, everything starts with the Blueprint, and the Blueprint starts with evidence. By the end of this chapter you will have inventoried a real book, commissioned and run real research, reviewed a plan built from that research, and signed your name to it — or refused to, with reasons, which counts just as much. You will not have edited a single chapter. That's the point.
+```
+git clone https://github.com/Humanitariansai/writing-guide.git
+```
 
-## Overview: why plan before touching anything
+What arrives is a complete, finished textbook: **the Writing Guide**, a 24-chapter college composition and rhetoric text. Open `chapters/` and skim the titles — the literacy narrative, memoir, the profile ("telling a rich and compelling story"), proposal writing, evaluation and review, the analytical report, rhetorical analysis, position argument, the research process, the annotated bibliography, image analysis, multimodal writing, scripting for the public forum, portfolio reflection. It teaches a college student to write across the genres a first-year course demands. It builds with one command. It is fact-checked, illustrated, and done — and none of it is yours.
 
-A book is a few hundred decisions wearing a table of contents. Make them one at a time, mid-draft, and they get made by momentum — whatever the last chapter did, the next one continues. Make them up front, against evidence, and every later edit has something to be checked against. The Blueprint is where those decisions get made *and recorded*: who the reader is, what capability each chapter builds, what gets cut, and — because a textbook without an assessment plan is not yet a textbook — which quizzes, exercises, flashcards, and course modules the book owes its readers.
+Here is what you and this book are going to do with it, over the next eleven chapters: **convert it into a copywriting book** — writing that exists to make a reader act. Chapters that serve a copywriter get transformed (the profile becomes a customer case study; the proposal becomes a pitch; rhetorical analysis becomes an ad teardown). Chapters that don't get cut, with logged reasons. Chapters copywriting needs that composition never taught — headlines, offers, landing pages, email, brand voice — get written. Along the way you'll add exercises and quizzes, generate flashcards, and export the result everywhere it needs to live: **Kindle** (a clean EPUB), **Canvas** (an importable course), and **Medhavy** (`.mdx`).
 
-The gate at the end of this chapter is called **GATE 0**, and it has one rule that will follow you through this entire book: *the agent prepares; the human signs.* Your agent will do every step below with you — the listing, the research, the drafting of the plan. The one thing it cannot do, by the system's constitution, is approve the result. That signature is yours, it gets logged, and every chapter after this one will cite it.
+But none of that starts with editing. It starts with getting the **book map — the Blueprint — right.** A book is a few hundred decisions wearing a table of contents: who the reader is, what each chapter builds, what dies, what's missing, and which assessments the book owes its readers. Make those decisions mid-draft and they get made by momentum. Make them up front, against evidence, and every later edit has something to be checked against. That's this chapter, hands-on: inventory the book you just cloned, commission and run real research, have Blueprint draft the plan from that evidence, and then sign it — or refuse to, with reasons, which counts just as much.
+
+The gate at the end of this chapter is called **GATE 0**, and it carries the rule that will follow you through this entire book: *the agent prepares; the human signs.* Your agent will do every step below with you — the listing, the research, the drafting of the plan. The one thing it cannot do, by the system's constitution, is approve the result. That signature is yours, it gets logged, and every chapter after this one will cite it.
 
 ## The exercise: six steps to a signed plan
 
 Work with your agent. Each step produces an artifact you can open.
 
-### Step 1 — Inventory the book you downloaded
+### Step 1 — Inventory the book you cloned
 
-Ask your agent to read `chapters/` in the writing-guide repo and produce an inventory table: chapter number, title, what it actually teaches (one line, not the title restated), and approximate length. Read the table. Fix at least one row where the agent's one-liner misses the chapter's real point — you'll find one, and finding it is the lesson: *the inventory is a claim, and you just checked it.*
+Ask your agent to read `chapters/` in your `writing-guide` clone and produce an inventory table: chapter number, title, what it actually teaches (one line, not the title restated), and approximate length. Read the table. Fix at least one row where the agent's one-liner misses the chapter's real point — you'll find one, and finding it is the lesson: *the inventory is a claim, and you just checked it.*
 
 **Artifact:** the inventory table, saved in the repo.
 
