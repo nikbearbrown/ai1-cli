@@ -8,7 +8,9 @@ real citations, defensible claims.
 After GATE 0 is signed. Before any drafting.
 
 ## Inputs
-- `chapters-spec.md`, `outline.md`.
+- Preferred: `TIKTOC.md`.
+- If no `TIKTOC.md` exists: the signed GATE 0 Blueprint/TOC. For the AI1 running project, use the copywriting book TOC signed in `books/writing-guide/pantry/ai1-ch1-blueprint-proposal.md` and reproduced in `chapters/01-inventory-research-blueprint-signoff.md`.
+- Supporting planning files: `chapters-spec.md`, `outline.md`.
 
 ## Outputs
 - `research/<chapter-slug>.md` per chapter: key facts, figures, quotes, and a
@@ -17,7 +19,9 @@ After GATE 0 is signed. Before any drafting.
 ## Prompt to paste into your CLI
 
 ```
-For each chapter in outline.md, create research/<chapter-slug>.md.
+Read the chapter source first. Prefer TIKTOC.md. If TIKTOC.md is absent, use the signed GATE 0 Blueprint/TOC; do not silently substitute an unsigned outline.
+
+For each chapter in the chapter source, create research/<chapter-slug>.md.
 
 For that chapter's spec in chapters-spec.md, gather the facts, data, examples,
 and quotes the chapter will need. For EACH claim you record:

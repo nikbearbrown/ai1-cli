@@ -4,13 +4,13 @@
 
 ---
 
-These are the two prompts behind Chapter 6 (*Research Pass: Pantry Population*). The **Gatherer** reads your `TIKTOC.md`, pulls relevant files from your shared library, and does first-pass web research into one notes file per chapter in `pantry/`. The **Research Pass** is the deeper version — nine structured sections per chapter, for contested or fast-moving fields. Both are discipline-agnostic. Copy the one you need into your project and point it at your book directory. The maintained copies live in Bear Brown & Company's online prompt library [verify URL at time of writing]; if they differ from this appendix, the online copies are newer.
+These are the two prompts behind Chapter 6 (*Research Pass: Pantry Population*). The **Gatherer** reads your chapter source, pulls relevant files from your shared library, and does first-pass research into one notes file per chapter in `pantry/`. The preferred source is `TIKTOC.md`; if the book has no `TIKTOC.md`, use the signed GATE 0 Blueprint/TOC instead. The **Research Pass** is the deeper version — nine structured sections per chapter, for contested or fast-moving fields. Both are discipline-agnostic. Copy the one you need into your project and point it at your book directory. The maintained copies live in Bear Brown & Company's online prompt library [verify URL at time of writing]; if they differ from this appendix, the online copies are newer.
 
 ---
 
 **Runs in:** Cowork or Codex — or any assistant with file read/write to your book directory.
 
-**Dependencies:** `TIKTOC.md` (chapter list and specs). *Optional:* a shared markdown library (default `~/textbooks/MD`) whose relevant files are copied in as `pantry/_lib_*.md`.
+**Dependencies:** `TIKTOC.md` (chapter list and specs), or the signed GATE 0 Blueprint/TOC when no `TIKTOC.md` exists. *Optional:* a shared markdown library (default `~/textbooks/MD`) whose relevant files are copied in as `pantry/_lib_*.md`.
 
 **Produces:** one `pantry/research-ch-NN-<slug>.md` per chapter, plus a pantry index.
 
@@ -24,12 +24,12 @@ These are the two prompts behind Chapter 6 (*Research Pass: Pantry Population*).
 
 You are a research assistant for a textbook project. Your job is to:
 
-1. Read `TIKTOC.md` from the book directory to get the chapter list
+1. Read `TIKTOC.md` from the book directory to get the chapter list; if absent, read the signed GATE 0 Blueprint/TOC
 2. For each chapter, do deep web research to gather material needed to write that chapter
 3. Save all gathered material as notes files in `pantry/`
 4. Scan a shared markdown library for any related material and copy relevant files to `pantry/`
 
-This prompt is generic — it works for any book directory that contains a `TIKTOC.md` file.
+This prompt is generic — it works for any book directory that contains a `TIKTOC.md` file or a signed GATE 0 Blueprint/TOC.
 
 ---
 
@@ -39,16 +39,37 @@ Determine `BOOK_DIR`:
 
 - If a directory was passed as an argument or is otherwise specified, use it.
 - Otherwise, look for `TIKTOC.md` in the current working directory. If found, that directory is `BOOK_DIR`.
-- If `TIKTOC.md` is not found in the current directory, search one level up and in sibling directories.
-- If `TIKTOC.md` cannot be located, report the directories searched and stop. Do not proceed without it.
+- If `TIKTOC.md` is not found, look for a signed GATE 0 Blueprint/TOC in likely pantry or planning files, including `pantry/ai1-ch1-blueprint-proposal.md`, `BLUEPRINT.md`, `outline.md`, `chapters-spec.md`, and any chapter text that explicitly says "this is what was signed."
+- If neither `TIKTOC.md` nor a signed GATE 0 Blueprint/TOC can be located, report the directories searched and stop. Do not proceed from an unsigned outline unless the user explicitly tells you to.
 
 Confirm `BOOK_DIR` before continuing.
 
 ---
 
-### STEP 1 — READ TIKTOC.md
+### STEP 1 — READ THE CHAPTER SOURCE
 
-Read `BOOK_DIR/TIKTOC.md` in full.
+Read the chapter source in full. Prefer `BOOK_DIR/TIKTOC.md`. If it does not exist, read the signed GATE 0 Blueprint/TOC.
+
+For the AI1 running project that converts the Writing Guide into the copywriting book, the signed fallback TOC is:
+
+| # | Core chapter | Built from | Support |
+|---|---|---|---|
+| 1 | The Brief: Judgment Over Fluency — directing, evaluating, and rejecting AI copy | 00 | ✓✓ |
+| 2 | Voice: Yours, the Brand's, the Customer's — guardrails, tone, dialect with intent | 01+03 | ✓✓ |
+| 3 | Reading the Feed: Teardowns — swipe files, funnel reverse-engineering, AI-search surfaces | 02+11 | ✓✓ |
+| 4 | Voice of the Customer: Interviews and Message Mining — the human moat | 07+19 | ✓✓ |
+| 5 | Offers and Positioning — the product as hero; what copy can't rescue | new | ✓✓ |
+| 6 | The Sales Page: Problem to Pitch — section-by-section argument | 08 | ✓✓ |
+| 7 | Objections and Risk Reversal — skepticism as the market condition | 12 | ✓✓ |
+| 8 | Buyer Awareness and the Frameworks — Schwartz's stages; PAS, BAB, AIDA | new | ✓ ⚠ verify first |
+| 9 | Reasoning That Survives Scrutiny — analogy, cause, classification; QA on fluent nonsense | 13 | ✓✓ |
+| 10 | Research Ops and the Claims File — primary research, provenance, the compliance database | 10+15+16 | ✓✓ |
+| 11 | Proof: Case Studies, Reviews, and Evidence Assets — FTC-aware testimonials, white papers | 17+09+05+14 | ✓✓ |
+| 12 | Multimodal: Image, Page, and Script — text-image fit, layout, VSLs, short-form video | 20+21+22 | ✓✓ |
+| 13 | Measurement and the Postmortem — CR/CTR/ROAS, testing, the campaign debrief | new + 23 | ✓✓ |
+| 14 | AI Operations and Governance — model choice, sign-off, disclosure, provenance | new + 18 | ✓ |
+
+Modules: **A — When You Are the Product** for founders and creators; **B — When Copy Is Your Business** for freelancers.
 
 Extract the chapter list. A chapter entry is any item that maps to a file that will be written to `BOOK_DIR/chapters/`. Chapters may appear as:
 
@@ -64,7 +85,7 @@ For each chapter, extract:
 | `chapter_number` | Integer (e.g., `3`) |
 | `chapter_slug` | Kebab-case filename slug (e.g., `the-map-before-the-territory`) |
 | `chapter_title` | Human-readable title |
-| `chapter_description` | Any one-line summary or description in TIKTOC.md |
+| `chapter_description` | Any one-line summary or description in the chapter source |
 | `core_concepts` | Any concepts, learning outcomes, or topics listed for this chapter |
 | `notes_filename` | Derived: `NN-slug_notes.md` where `NN` is zero-padded chapter number |
 
@@ -74,12 +95,12 @@ For each chapter, extract:
 - Notes filename: `{NN}-{slug}_notes.md`
 - Example: Chapter 3 "The Map Before the Territory" → `03-the-map-before-the-territory_notes.md`
 
-If TIKTOC.md uses a different numbering scheme (e.g., "Week 3" instead of "Chapter 3"), use the week/unit number as the chapter number.
+If the source uses a different numbering scheme (e.g., "Week 3" instead of "Chapter 3"), use the week/unit number as the chapter number.
 
 **After extracting the full chapter list, print it for confirmation before proceeding:**
 
 ```
-Chapter list extracted from TIKTOC.md:
+Chapter list extracted from the chapter source:
 
   03 | the-map-before-the-territory | The Map Before the Territory
   04 | the-identification-layer     | The Identification Layer: What Only You Can Do
@@ -101,9 +122,9 @@ For each file in the library (recursively, all `.md` files):
 
 1. Read the filename and first 50 lines
 2. Score relevance to the book based on:
-   - Overlap with the book's subject (inferred from TIKTOC.md title and chapter titles)
+   - Overlap with the book's subject (inferred from the chapter source and chapter titles)
    - Overlap with any specific chapter's core concepts
-   - Presence of key terms from TIKTOC.md
+   - Presence of key terms from the chapter source
 
 **Relevance threshold:** Copy any file scoring as "relevant" or "possibly relevant" to `BOOK_DIR/pantry/`. Prefix copied files with `_lib_` to indicate they came from the library, preserving the original filename.
 
@@ -137,7 +158,7 @@ Process chapters in numerical order.
 
 #### Research scope for each chapter
 
-Using the chapter title, description, and core concepts from TIKTOC.md, gather:
+Using the chapter title, description, and core concepts from the chapter source, gather:
 
 **A. Conceptual foundations**
 - What are the 3–5 most important ideas this chapter needs to convey?
@@ -153,7 +174,7 @@ Using the chapter title, description, and core concepts from TIKTOC.md, gather:
 **C. Connections and dependencies**
 - What must a reader already understand before this chapter makes sense?
 - What concepts in this chapter unlock later chapters?
-- How does this chapter's content connect to adjacent chapters in the TIKTOC?
+- How does this chapter's content connect to adjacent chapters in the chapter source?
 
 **D. Current state of the field**
 - What is settled vs. actively contested about this topic?
@@ -187,16 +208,16 @@ Use this structure:
 ```markdown
 # Research Notes: Chapter NN — [Chapter Title]
 
-**Source:** TIKTOC.md chapter entry
+**Source:** TIKTOC.md chapter entry, or signed GATE 0 Blueprint/TOC entry if no TIKTOC exists
 **Notes file:** NN-slug_notes.md
 **Corresponding chapter:** chapters/NN-slug.md (not yet written)
 **Generated:** [ISO date]
 
 ---
 
-## Chapter summary (from TIKTOC.md)
+## Chapter summary (from chapter source)
 
-[Paste the chapter description and learning outcomes from TIKTOC.md verbatim]
+[Paste the chapter description and learning outcomes from the chapter source verbatim]
 
 ---
 
