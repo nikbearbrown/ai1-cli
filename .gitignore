@@ -8,3 +8,6 @@ node_modules/
 .env.local
 __pycache__/
 *.pyc
+
+# generated instruction adapters (rebuild from instructions/)
+instructions/.build/

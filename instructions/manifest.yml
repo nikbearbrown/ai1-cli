@@ -1,0 +1,28 @@
+name: ai1-cli-instructions
+title: "AI1 CLI agent instructions (source for AGENTS.md + CLAUDE.md)"
+
+# Rule modules — AI1-native (governed by AI1.md, NOT the Mycroft constitution).
+# These encode the load-bearing operating rules so AGENTS.md and CLAUDE.md stop
+# being hand-maintained near-duplicates. Order = order in the generated file.
+shared:
+  - governance.md
+  - help.md
+  - non-technical-user.md
+  - secure-keys.md
+  - phase-gates.md
+  - verify-before-generate.md
+  - leave-a-trail.md
+
+# Project-specific source (identity + the seven-phase map).
+project: ai1-cli.md
+
+# Appended ONLY to CLAUDE.md. Claude supports @import; other tools read AGENTS.md
+# directly and resolve AI1.md / CONDUCTOR.md / STATUS.md on demand per governance.md.
+claude_only:
+  - "## Claude Code"
+  - "@AI1.md"
+  - "- Default to agent mode (you are the model; no API key). Use plan mode before edits in chapters/ or conductor/."
+
+targets:
+  - agents
+  - claude

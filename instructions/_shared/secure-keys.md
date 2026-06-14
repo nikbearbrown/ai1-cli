@@ -1,0 +1,3 @@
+## Secure key path (P5)
+
+If a key is ever genuinely required (e.g. ElevenLabs audio), use the **secure path** so the key never passes through chat: create `.env` from `.env.example` if missing, **open it** for the user (e.g. `open .env`), have them paste the key on its line and save, then confirm it's set with a non-echoing check (`grep -q '^ELEVENLABS_API_KEY=.\+' .env`). **Never print, echo, log, or repeat a key back, and never commit `.env`.** Only offer the paste-in-chat shortcut if they prefer convenience, and warn once that it sends the key through the chat. See `KEYS.md` and `MODES.md`.

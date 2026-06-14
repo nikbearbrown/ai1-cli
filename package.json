@@ -4,6 +4,7 @@
   "type": "module",
   "description": "AI1 CLI",
   "scripts": {
+    "build-instructions": "node scripts/build-instructions.mjs",
     "svg-to-png": "node scripts/svg-to-png.mjs"
   },
   "dependencies": {
