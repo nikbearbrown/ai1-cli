@@ -565,7 +565,7 @@ Iterates through every file in `chapters/` and enriches it in place:
 2. If `images/` or `d3/` do not exist, create them.
 3. Confirm `node` is available: run `node --version`. If it fails, stop and report.
 4. Confirm `sharp` is installed: run `node -e "import('sharp').then(() => console.log('ok'))"`. If it fails, run `npm install` from the book root before proceeding.
-5. Read `NEU/CLAUDE.md` and `NEU/DESIGN.md` in full. If those paths do not exist, check `brutalist/CLAUDE.md` and `brutalist/DESIGN.md`. Every D3 HTML file and every SVG generated must conform to both documents. Do not proceed without reading them.
+5. Read `NEU/CLAUDE.md` and `NEU/DESIGN.md` in full. If those paths do not exist, check `brutalist/D3.md` and `brutalist/DESIGN.md`. Every D3 HTML file and every SVG generated must conform to both documents. Do not proceed without reading them.
 6. Read `metadata.yaml` in full. Extract: `title`, `author`, `date`.
 7. Build a chapter list: all `.md` files in `chapters/`, sorted by filename.
 8. Extract the chapter slug from each filename (the full filename minus `.md`, e.g., `07-comparison-charts`). Use this for all figure filenames.
