@@ -5,7 +5,8 @@
   "description": "AI1 CLI",
   "scripts": {
     "build-instructions": "node scripts/build-instructions.mjs",
-    "svg-to-png": "node scripts/svg-to-png.mjs"
+    "svg-to-png": "node scripts/svg-to-png.mjs",
+    "audit:layout": "node scripts/svg-layout-audit.mjs"
   },
   "dependencies": {
     "sharp": "^0.33.0",
