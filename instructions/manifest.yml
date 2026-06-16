@@ -5,6 +5,7 @@ title: "AI1 CLI agent instructions (source for AGENTS.md + CLAUDE.md)"
 # These encode the load-bearing operating rules so AGENTS.md and CLAUDE.md stop
 # being hand-maintained near-duplicates. Order = order in the generated file.
 shared:
+  - visual-media.md
   - governance.md
   - help.md
   - non-technical-user.md
