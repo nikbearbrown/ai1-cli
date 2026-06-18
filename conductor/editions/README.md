@@ -8,6 +8,7 @@ Each file is a **stub**: what the edition is, when to use it, and a starter
 prompt block. Expand a stub into a full prompt when you decide to build it.
 
 ## Study & assessment
+- `ai1-running-project.md` — Running Project Exercise Generator (AI+1 five-part blocks; framework-aware — operates Madison/Mycroft/Reallocation Engine recipes when present)
 - `chapter-quizzes.md` — Chapter Quizzes & Checks for Understanding
 - `practice-exercises.md` — Practice Exercises
 - `worked-exercises.md` — Worked Exercises & Solutions
