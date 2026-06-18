@@ -15,6 +15,7 @@ prompt block. Expand a stub into a full prompt when you decide to build it.
 - `flashcards-anki.md` — Flashcards / Anki Deck
 
 ## Reference & extension
+- `chapter-tldr.md` — Chapter TL;DR Generator (overall TL;DR + per-section preview table)
 - `further-reading.md` — Further Reading Guide
 - `cli-quick-reference.md` — Command-Line Quick Reference
 - `llm-learning-companion.md` — LLM Learning Companion
