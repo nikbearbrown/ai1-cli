@@ -1,0 +1,154 @@
+{
+  "book": "ai1-cli",
+  "book_title": "AI1 CLI — \"",
+  "chapter_count": 21,
+  "chapters": [
+    {
+      "file": "chapters/00-introduction.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/00-introduction.md",
+      "title": "Introduction",
+      "words": 768,
+      "images": 0
+    },
+    {
+      "file": "chapters/01-inventory-research-blueprint-signoff.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/01-inventory-research-blueprint-signoff.md",
+      "title": "Chapter 1 — Inventory, Research, Blueprint, Sign-Off",
+      "words": 4624,
+      "images": 0
+    },
+    {
+      "file": "chapters/02-chapter-research.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/02-chapter-research.md",
+      "title": "Chapter 2 — Chapter Research",
+      "words": 2302,
+      "images": 0
+    },
+    {
+      "file": "chapters/80-appendix-tiktoc.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/80-appendix-tiktoc.md",
+      "title": "Appendix A — The Tic TOC Prompt",
+      "words": 15183,
+      "images": 0
+    },
+    {
+      "file": "chapters/81-appendix-domain-research.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/81-appendix-domain-research.md",
+      "title": "Appendix B — The Domain Research Prompt",
+      "words": 1114,
+      "images": 0
+    },
+    {
+      "file": "chapters/82-appendix-scaffold.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/82-appendix-scaffold.md",
+      "title": "Appendix C — The Book Scaffold Script (`new_book.py`)",
+      "words": 433,
+      "images": 0
+    },
+    {
+      "file": "chapters/83-appendix-research-pass.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/83-appendix-research-pass.md",
+      "title": "Appendix D — The Research Pass Prompts",
+      "words": 4340,
+      "images": 0
+    },
+    {
+      "file": "chapters/84-appendix-chapter-writer.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/84-appendix-chapter-writer.md",
+      "title": "Appendix E — The Chapter Writer Prompt",
+      "words": 2189,
+      "images": 0
+    },
+    {
+      "file": "chapters/85-appendix-combined-test.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/85-appendix-combined-test.md",
+      "title": "Appendix F — The Combined Test",
+      "words": 663,
+      "images": 0
+    },
+    {
+      "file": "chapters/86-appendix-finishing-figures.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/86-appendix-finishing-figures.md",
+      "title": "Appendix G — The Finishing Pass and Image Suggest Prompts",
+      "words": 853,
+      "images": 0
+    },
+    {
+      "file": "chapters/87-appendix-enrichment.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/87-appendix-enrichment.md",
+      "title": "Appendix H — The LLM Enrichment Prompts",
+      "words": 7463,
+      "images": 7
+    },
+    {
+      "file": "chapters/88-appendix-cajal.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/88-appendix-cajal.md",
+      "title": "Appendix I — The CAJAL Figure Command Set and SVG Style Guide",
+      "words": 7513,
+      "images": 1
+    },
+    {
+      "file": "chapters/89-appendix-factcheck.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/89-appendix-factcheck.md",
+      "title": "Appendix J — The Fact-Checking Prompt",
+      "words": 2517,
+      "images": 0
+    },
+    {
+      "file": "chapters/90-appendix-imscc-standard.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/90-appendix-imscc-standard.md",
+      "title": "Appendix — The Canvas Export Script (`build-imscc-standard.py`)",
+      "words": 527,
+      "images": 0
+    },
+    {
+      "file": "chapters/91-appendix-case-generator.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/91-appendix-case-generator.md",
+      "title": "Appendix 91 — Case Study Generator (prompt)",
+      "words": 1396,
+      "images": 0
+    },
+    {
+      "file": "chapters/92-appendix-glimmer-generator.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/92-appendix-glimmer-generator.md",
+      "title": "Appendix 92 — Glimmer Generator (prompt)",
+      "words": 1423,
+      "images": 0
+    },
+    {
+      "file": "chapters/93-appendix-spaced-repetition-generator.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/93-appendix-spaced-repetition-generator.md",
+      "title": "Appendix D — The Spaced-Repetition Card Generator",
+      "words": 605,
+      "images": 0
+    },
+    {
+      "file": "chapters/94-appendix-anki-build.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/94-appendix-anki-build.md",
+      "title": "Appendix — The Anki Deck Script (`build-anki.py`)",
+      "words": 481,
+      "images": 0
+    },
+    {
+      "file": "chapters/95-appendix-react-site.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/95-appendix-react-site.md",
+      "title": "Appendix — The React Site Script (`build-react-site.py`)",
+      "words": 449,
+      "images": 0
+    },
+    {
+      "file": "chapters/96-appendix-medhavy-lti.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/96-appendix-medhavy-lti.md",
+      "title": "Appendix 96 — Medhavy LTI 1.3 Setup Guide",
+      "words": 2365,
+      "images": 0
+    },
+    {
+      "file": "chapters/97-appendix-ask-ai.md",
+      "path": "/Users/nik/Documents/Cowork/ai1-cli/chapters/97-appendix-ask-ai.md",
+      "title": "Appendix 97 — Ask AI: Per-Surface Configuration and the Parallel-LLM Companion Prompt",
+      "words": 2093,
+      "images": 0
+    }
+  ]
+}

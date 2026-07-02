@@ -71,3 +71,4 @@ Check off the ones chosen; see `conductor/editions/README.md`.
 - [ ] Sardonic voice (Griffiths register)
 - [ ] Narrative voice (historical)
 - [ ] Pragmatist voice (engineering)
+- [ ] Teardown voice (design-critic; adds `/essay` `/nart` `/write` `/bookmap` + the `/done` finishing pass)

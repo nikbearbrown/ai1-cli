@@ -28,8 +28,14 @@ chapter's title, all markdown comments, any LLM exercises, and any images.
 | **Sardonic** | `sardonic/` | Dry, slightly sardonic, capable-adult, footnote jokes, hard problems *(Griffiths register)* |
 | **Narrative** | `narrative/` | The discovery story — who was wrong first, the real confusion *(historical register)* |
 | **Pragmatist** | `pragmatist/` | Formula → when to use it → ~12 practice problems. Zero personality *(engineering register)* |
+| **Teardown** | `teardown/` | Take it apart, explain how each piece works, judge the design choices — intellectual honesty + design-critic lens (what it optimizes for, the trade-offs). Richer than the others: carries a command set (`/essay`, `/nart`, `/write`, `/bookmap`) and a **`/done` finishing pass** *(design-critic register; formerly Feynman × MKBHD)* |
 
 Each folder has a `VOICE.md` with the full definition and an invoke block.
+
+> **`/done` finishing pass:** the Teardown voice adds a finishing layer that runs on
+> any completed draft — it adds a styled subtitle if none exists, adds graduated exercises if
+> none exist, and seeds visual-suggestion HTML comments (invisible when rendered, visible in
+> source). It adds only what's missing and rewrites nothing. See `teardown/VOICE.md`.
 
 ## Relationship to `conductor/editions/`
 

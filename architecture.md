@@ -61,6 +61,10 @@
 1. (Apply) Produce final EPUB/Kindle, Canvas `.imscc`, Medhavy `.mdx`, and regenerated assessments.
 2. (Evaluate) Walk the provenance chain of the finished book and defend one gate decision in it.
 
+**Ch 13 — From Book to Video** *(capstone; extension)*
+1. (Apply) Turn one finished, signed chapter into a previewed narrated lecture spine with Unreal Reels (pool → sign the plan → narrate/preview).
+2. (Evaluate) Run the fidelity pass against the source chapter, resolve every flag, and sign the lecture — stating what the signature warrants (faithful to a verified source, not true from scratch).
+
 ## Outcome Map
 
 | Ch | Highest Bloom's | Assessable? | Maps to course need? |
@@ -77,6 +81,7 @@
 | 10 | Evaluate | Y (reconciliation changelog) | delivery vs. promise |
 | 11 | Analyze | Y (fact-check report) | accuracy |
 | 12 | Evaluate | Y (provenance walk) | integration |
+| 13 | Evaluate | Y (signed lecture + clean fidelity report) | extend the book into video |
 
 No comprehension-only chapters; every chapter has Apply or above. ✔
 

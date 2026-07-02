@@ -96,6 +96,13 @@ Overview (1–3 pages: the artifact you're about to make, why the system works t
 *Capability:* the honest run completed; all exports.
 *Blocks:* final build; EPUB/Kindle; Canvas; Medhavy `.mdx` (export only — capabilities are its own book); assessments regenerated; the provenance walk — defend one gate decision.
 *Exercises:* all four exports; provenance walk written up; final log entry.
+*Bridge:* the book is shipped — now let it speak.
+
+**Ch 13 — From Book to Video** *(capstone; extension)*
+*Capability:* extend a finished, signed book into video without losing its authority.
+*Blocks:* Unreal Reels as AI+1's sibling (the two laws — audio is the master clock; the human signs every gate — and `beat_sheet.json` as the spine, mirroring `facts.json`); the three forms (lecture / explainer / reels-promo) over one engine; the lecture pipeline in three stages (pool → sign the plan → narrate/preview); fidelity downstream of a GATE-4 chapter (a fidelity check, not a fact-check from scratch); the render gate the agent may never sign; a lecture as a first-class AI+1 artifact (its own sign-off sidecar). Referenced, not bundled — like Medhavy.
+*Worked example:* one shipped chapter → a previewed lecture spine → a clean fidelity report → a signed lecture.
+*Exercises:* pick a chapter and choose its video form; build and preview a lecture spine; run the fidelity pass, resolve every flag, sign the lecture.
 *Bridge (coda):* same loop, empty starter — your book this time.
 
 ## Case Study Strategy
