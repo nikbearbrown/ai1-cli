@@ -11,3 +11,5 @@ __pycache__/
 
 # generated instruction adapters (rebuild from instructions/)
 instructions/.build/
+# Canvas exports are never pushed.
+*.imscc
