@@ -21,7 +21,8 @@ ANTHROPIC_API_KEY=sk-ant-... node scripts/svg-visual-audit.mjs   # AI fixer
 ## sync-to-book.sh
 Propagates canonical scripts & recipes from this (source-of-truth) repo into
 another book repo, per `../SOURCE-MANIFEST.md`. Overwrites canonical files, seeds
-templates only if missing, never touches the book's content/data/secrets.
+blank templates from `../templates/seed/` only if missing, never touches the
+book's content/data/secrets. Runs on macOS's stock `/bin/bash` (3.2).
 ```bash
 scripts/sync-to-book.sh [--dry-run] <target-book-dir>
 ```

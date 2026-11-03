@@ -1,0 +1,13 @@
+---
+title: "[BOOK TITLE]"
+subtitle: ""
+author: "Nik Bear Brown"
+language: en-US
+rights: "Copyright © [YYYY] Nik Bear Brown"
+publisher: "Bear Brown, LLC"
+date: "[YYYY-MM-DD]"
+cover-image: cover.jpg
+stylesheet: styles/kindle.css
+toc: true
+toc-depth: 2
+---

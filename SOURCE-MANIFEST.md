@@ -9,7 +9,8 @@ Three categories:
 - **CANONICAL** — overwritten on every sync. The shared tooling and prompt-sets.
   Never edit these in a downstream book; edit them here and re-sync.
 - **SEED** — copied only if missing in the target. Per-book templates you fill in
-  (planning docs, configs, status, an empty fact dictionary).
+  (planning docs, configs, status, an empty fact dictionary). Copied from the
+  blank templates in `templates/seed/`, never from ai1-cli's own root copies.
 - **PROTECTED** — never copied or overwritten. The book's own content, generated
   outputs, data, secrets, and audit trail.
 
@@ -58,6 +59,7 @@ voices/socratic/VOICE.md
 voices/sardonic/VOICE.md
 voices/narrative/VOICE.md
 voices/pragmatist/VOICE.md
+voices/teardown/VOICE.md
 facts/facts_store.py
 facts/facts.py
 facts/extract-facts.py
@@ -98,6 +100,13 @@ facts/facts.json.verified.json
 
 These carry per-book values (title, gate state, configs, filled planning docs, the
 book's own fact dictionary). A new book gets them; an existing book keeps its own.
+
+The source for each path is `templates/seed/<path>`: a blank template with
+`[BOOK TITLE]` and `[NEEDS HUMAN INPUT]` placeholders. ai1-cli is itself a book,
+so its root copies of these files hold the AI1 CLI book's own title, plan, and
+gate state, and are never seeded. To change what a new book starts with, edit
+the template. Every path in this list needs a template; the sync warns and skips
+any that is missing. `templates/` lives only in ai1-cli and is never synced.
 
 ---
 
