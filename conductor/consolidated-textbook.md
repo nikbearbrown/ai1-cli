@@ -32,11 +32,13 @@ private run folder; these records are never imported as production sidecars.
    owns that key in its Blueprint. If both sources of authority conflict or
    more than one target qualifies, flag the decision for the owner and stop
    work on that key rather than generating rival drafts. If no target exists,
-   propose one title of the form `Subject AI One` and one kebab-case repository
-   slug ending in `-ai-one` (e.g. `graph-search-ai-one`). If a disambiguating
-   audience or stable scope-key hash is needed, put it before `-ai-one` and
-   keep the title ending in `AI One`. Resuming a run reuses the register and
-   target; never silently fork it or rename an existing book.
+   propose one plain-English title of the form `Subject (AI Plus One)` and one
+   kebab-case repository slug ending in `-ai-one` (e.g. `graph-search-ai-one`
+   for `Graph Search (AI Plus One)`). Keep institutional course codes in source
+   references, not the title. Keep “AI” if it belongs to the subject itself.
+   Put any disambiguating audience in the subject before the parenthetical,
+   and any slug disambiguator before `-ai-one`. Resuming a run reuses the
+   register and target; never silently fork it or rename an existing book.
 3. Revised titles, alternate editions, transcripts, slides, chapter fragments
    and lecture demos for the same scope are inputs or companion assets, not
    separate books. Compare overlapping-but-different outcome sets: do not
