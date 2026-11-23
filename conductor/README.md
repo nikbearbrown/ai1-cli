@@ -20,6 +20,12 @@ Each phase ends with a gate you record in `../STATUS.md`.
 
 = **the spine**: a complete, fact-checked, illustrated book.
 
+## Separate pre-review route
+
+[Consolidated AI One textbook](consolidated-textbook.md) combines permissioned
+prior work into one private draft per comparable scope, ending with draft
+proofs, review, and the human final edit. It never marks spine gates complete.
+
 ## Advisory tools (any time a draft exists)
 
 `editorial-review/` — the Reader's Report: a developmental + line editor's

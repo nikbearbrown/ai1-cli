@@ -31,6 +31,18 @@ This file is the source of truth for the AI+1 system. If any file in this reposi
 **P7 — Leave a trail.** Research notes, fact-check reports, audit output, and sidecars are artifacts — committed, not discarded. When unsure, stop and ask the human; a wrong autonomous phase is expensive to unwind.
 *Violated when:* work happens that the repo cannot show evidence of.
 
+## Private pre-review
+
+When the author explicitly commissions a consolidated review book, use the
+[isolated draft-proof route](conductor/consolidated-textbook.md). It prepares
+provisional artifacts outside production and outside Git, ending with the
+human's final edit. P1–P4 still govern the signed spine and existing verified
+artifacts. Pre-review receipts are deliberately unsigned; no review artifact or
+automated result advances the spine, changes `STATUS.md`, or authorizes release.
+P7's recordkeeping is private for permissioned sources and pre-review work:
+keep unsanitized evidence out of Git; a minimal redacted handoff requires
+explicit approval for the files and destination.
+
 ## The Map
 
 | File | Role |

@@ -51,6 +51,8 @@ scripts/gen-audio.py
 scripts/build-apkg.py
 scripts/sync-to-book.sh
 scripts/README.md
+.claude/skills/ai-one-textbook/README.md
+.claude/skills/ai-one-textbook/SKILL.md
 conductor/
 voices/README.md
 voices/wonder/VOICE.md

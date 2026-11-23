@@ -48,6 +48,15 @@ Gates are how a starter becomes *your* book instead of a pile of AI output.
 
 ---
 
+## Consolidating prior material for private review
+
+For an author-requested consolidated AI One textbook, use the separate
+[private pre-review procedure](conductor/consolidated-textbook.md). It runs in
+an isolated folder, respects verified inputs, and makes unsigned draft proofs
+for expert input and the author's final edit. The spine above remains the only
+production route. Neither private fact-checking nor review/export commands
+advance a gate or authorize publication.
+
 ## Verified Artifact System
 
 Every artifact produced by this pipeline — scripts, data files, chapter drafts,

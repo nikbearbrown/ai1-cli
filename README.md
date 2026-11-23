@@ -8,6 +8,10 @@
 **New here? Open this repo in a CLI and type `help`** — or read `HELP.md`. For the
 full briefing, `HOW-TO-USE.md` explains the two build paths and how the agent works.
 
+For an author-requested book based on existing drafts and lectures, use the
+[AI One textbook skill](.claude/skills/ai-one-textbook/SKILL.md).
+It produces private draft proofs for review, not publication.
+
 ## Structure
 
 ```
